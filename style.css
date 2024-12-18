@@ -1,0 +1,641 @@
+:root {
+    --midnight-moss: #253612; /* had to change colour as the original was way too bright green*/
+    --weathered-stone: #B8B7A5;
+    --doves-wing: #D3D2C7;
+    --twilight-sage: #655971;
+    --morning-mist-lilac: #BEA8D1;
+    --cloud-cover: #D4D4D4;
+}
+
+/* ALL PAGES */
+
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.sweet-gothic-regular {
+    font-family: "sweet-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--doves-wing);
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--midnight-moss);
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.nav-menu-container {
+    background-color: var(--weathered-stone);
+    border-radius: 20px;
+    outline: var(--midnight-moss);
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: var(--doves-wing);
+    border: 1px solid var(--midnight-moss);
+    margin: 0 5px;
+    border-radius: 15px;
+    color: var(--midnight-moss);
+    font-family: "sweet-gothic", sans-serif;
+    font-size: 14px;
+    height: 40px;
+    width: 150px;
+}
+
+.menu-item:hover {
+    background-color: var(--midnight-moss);
+    color: var(--doves-wing);
+    border: 1px solid var(--doves-wing);
+}
+
+.right-header {
+    height: 100%;
+    padding: 0 10px;
+}
+
+#notification-icon {
+    height: 80%;
+    padding: 0 10px;
+    color: var(--cloud-cover);
+}
+
+#notification-icon:hover {
+    height: 80%;
+    padding: 0 10px;
+    color: var(--morning-mist-lilac);
+}
+
+#user-icon {
+    height: 80%;
+    padding: 0 10px;
+    color: var(--cloud-cover);
+}
+#user-icon:hover {
+    height: 80%;
+    padding: 0 10px;
+    color: var(--morning-mist-lilac);
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: var(--twilight-sage);
+}
+
+footer a:hover {
+    color: var(--morning-mist-lilac);
+}
+
+
+
+
+/* GALLERY PAGE ONLY */
+
+#add-icon {
+    padding: 0 20px;
+    color: var(--morning-mist-lilac);
+}
+
+#add-icon:hover {
+    color: var(--twilight-sage);
+}
+
+#add-icon:focus {
+    color: var(--doves-wing);
+}
+
+.content-container {
+    display: flex;
+    background-color: var(--doves-wing);
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+}
+
+.gallery-area {
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: calc(2.75 * (175px + 60px));
+    overflow: hidden;
+}
+
+.title-section h1 {
+    color: var(--midnight-moss);
+    font-size: 42px;
+    font-family: "Abril FatFace", serif;
+}
+
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--midnight-moss);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    border: 2px solid var(--midnight-moss);
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.plant-grid::-webkit-scrollbar-track {
+    width: 8px;
+}
+
+.plant-grid a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.plant-card {
+    padding-bottom: 5px;
+    margin: 0 auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.plant-card:hover {
+    transform: scale(1.05);
+}
+
+.plant-card img {
+    width: 175px;
+    height: 175px;
+    object-fit: fill;
+    border: solid 2px var(--weathered-stone);
+    
+}
+
+.plant-info {
+    color: var(--midnight-moss);
+    align-items: left;
+    padding: 2px 5px;
+}
+
+.plant-info h3 {
+    margin: 0;
+    font-size: 22px;
+    font-family: "Abril FatFace", serif;
+    font-weight: 200;
+}
+
+.plant-info p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "sweet-gothic", sans-serif;
+}
+
+.log-care {
+    width: 90%;
+    padding: 10px;
+    background-color: var(--morning-mist-lilac);
+    border: 2px solid var(--twilight-sage);
+    border-radius: 20px;
+    margin: 20px;
+    color: var(--twilight-sage);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "sweet-gothic", sans-serif;
+}
+
+.log-care:hover {
+    background-color: var(--twilight-sage);
+    border: 2px solid var(--morning-mist-lilac);
+    color: var(--morning-mist-lilac);
+}
+
+.log-care:focus {
+    border: 2px solid var(--cloud-cover);
+}
+
+.filter-area {
+    width: 25%;
+    background-color: var(--weathered-stone);
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.filters {
+    margin: 0 auto;
+    color: var(--midnight-moss);
+    padding-left: 30px;
+}
+
+.filters h2 {
+    color: var(--midnight-moss);
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Abril FatFace", serif;
+}
+
+.filters h3 {
+    font-family: "sweet-gothic", sans-serif;
+}
+
+.filters label {
+    font-family: "sweet-gothic", sans-serif;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--midnight-moss);
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.apply-btn:disabled {
+    width: 70%;
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--weathered-stone);
+    border: 2px solid var(--midnight-moss);
+    border-radius: 10px;
+    color: var(--midnight-moss);
+}
+
+.apply-btn {
+    background-color: var(--midnight-moss);
+    color: var(--weathered-stone);
+    width: 70%;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid var(--weathered-stone);
+    border-radius: 10px;
+}
+
+
+
+
+
+/* HOME PAGE ONLY */
+
+.welcome-container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.welcome-container h1 {
+    font-family: 'Abril FatFace', serif;
+    font-size: 60px;
+    color: var(--midnight-moss);
+    font-weight: 200;
+}
+
+.welcome-container p {
+    font-family: 'sweet-gothic', sans-serif;
+    color: var(--midnight-moss);
+    font-size: 16px;
+    flex-shrink: 0;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.welcome-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/welcomebg.JPG');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 -315px;
+    background-attachment: fixed;
+    opacity: 0.5;
+    border-radius: 15px;
+    z-index: -1;
+    transform: translateZ(0);
+}
+
+
+.home-content-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.all-plants-section {
+    margin-top: 10px;
+    max-height: 40%;
+    width: 100%;
+}
+
+.all-plants-section h2 {
+    color: var(--midnight-moss);
+    font-family: "Abril FatFace", serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.plants-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    height: 100%;
+}
+
+.plants-scroll-container::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+}
+
+.plants-scroll-container::-webkit-scrollbar-track {
+    background: var(--doves-wing);
+    border-radius: 4px;
+}
+
+.plants-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--twilight-sage);
+    border-radius: 4px;
+}
+
+.plants-scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--midnight-moss) var(--weathered-stone)
+}
+
+.all-plant-card {
+    min-width: 200px;
+    max-width: 200px;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.all-plant-card:last-child {
+    margin-right: 0;
+}
+
+.all-plant-card:hover {
+    transform: scale(1.05);
+}
+
+
+.all-plant-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: solid 3px var(--weathered-stone);
+}
+
+.all-plant-card .plant-info {
+    color: var(--midnight-moss);
+    padding: 2px 5px;
+}
+
+.all-plant-card .plant-info h3 {
+    margin: 0;
+    font-size: 22px;
+    font-family: "AbrilF FatFace", serif;
+    font-weight: 200;
+}
+
+.all-plant-card .plant-info p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "sweet-gothic", sans-serif;
+}
+
+.needs-attention-sidebar {
+    width: 300px;
+    min-width: 300px;
+    background-color: var(--weathered-stone);
+    border-radius: 15px;
+    padding: 15px;
+    height: fit-content;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.needs-attention-sidebar h2 {
+    color: var(--midnight-moss);
+    font-family: "Abril FatFace", serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.needs-list {
+    max-height: calc(70vh - 250px);
+    overflow-y: auto;
+    padding-right: 10px; 
+    margin-right: -10px; 
+}
+
+.needs-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.needs-list::-webkit-scrollbar-track {
+    background: var(--doves-wing);
+    border-radius: 4px;
+}
+
+.needs-list::-webkit-scrollbar-thumb {
+    background: var(--twilight-sage);
+    border-radius: 4px;
+}
+
+.plant-need-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--doves-wing);
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: calc(100% - 1rem);
+    box-sizing: border-box;
+}
+
+.plant-need-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 2px solid var(--weathered-stone);
+}
+
+.need-plant-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.need-plant-info h3 {
+    margin: 0;
+    font-family: "Abril FatFace", serif;
+    color: var(--midnight-moss);
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.need-plant-info p {
+    margin: 5px 0;
+    font-family: "sweet-gothic", sans-serif;
+    color: var(--midnight-moss);
+    font-size: 12px;
+}
+
+.care-indicators {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--morning-mist-lilac);
+    border: 1px solid var(--twilight-sage);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.svg-icon {
+    height: 100%;
+    width: 100%;
+    fill: none;
+    stroke: var(--midnight-moss);
+    stroke-width: 2px;
+}
+
+.percentage {
+    color: var(--midnight-moss);
+    font-family: "sweet-gothic", sans-serif;
+    font-weight: 300;
+    background-color: var(--weathered-stone);
+    border: 1px solid var(--midnight-moss);
+    border-radius: 5px;
+    padding: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.plant-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.plant-link:hover .plant-need-item {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.needs-attention-sidebar .log-care {
+    width: 90%;
+    margin: 10px auto 20px;
+    display: block;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+
+
+/* COMING SOON PAGE */
+
+.message-container h1 {
+    font-family: "Abril FatFace", serif;
+    font-size: 72px;
+    text-align: center;
+    color: var(--midnight-moss);
+}
+
+.message-container p {
+    font-family: "sweet-gothic", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--midnight-moss);
+    padding: 20px;
+}
+
+.message-container {
+    border: solid 2px var(--midnight-moss);
+    border-radius: 12px;
+    padding: 30px;
+    background-color: var(--weathered-stone);
+}
